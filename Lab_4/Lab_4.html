@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+     <link rel="stylesheet" href="css/style.css">
        <title>Javascript</title>
        <script src = "Lab_4_Javascript.js"> </script>
 
 
  
     </head>
-    <body>
-        <label for = "key">Ingrese una llave</label>
-        <br>
-        <input type="text" name="Value" id="txt1">
-        <br>
-        <label for = "value">Ingrese el valor</label>
-        <br>
-        <input type="" name="Value" id="txt2">
-        <button onclick="AddDictionary()">Agregar</button>
-        <button onclick ="ShowData()">Mostrar Informacion JSON</button>
-        <button onclick = "ConvertToXml()">Mostrar Informacion Xml</button>
-        <br>
-        <textarea id= "txtArea" name= "txtArea" style="width: 500px; height: 500px;">Resultado</textarea>
+    <body background = "cerveza.jpg">
+        <div class="form">
+                <label for = "key">Ingrese una llave</label>
+                <br>
+                <input type="text" name="Value" id="txt1">
+                <br>
+                <label for = "value">Ingrese el valor</label>
+                <br>
+                <input type="" name="Value" id="txt2">
+                <button onclick="AddDictionary()">Agregar</button>
+                <button onclick ="ShowData()">Mostrar Informacion JSON</button>
+                <button onclick = "ConvertToXml()">Mostrar Informacion Xml</button>
+                <br>
+                <br>
+                <br>
+                <textarea id= "txtArea" name= "txtArea" style="width: 500px; height: 500px;">Resultado</textarea>
+        </div> 
+        
     </body>
 </html>
