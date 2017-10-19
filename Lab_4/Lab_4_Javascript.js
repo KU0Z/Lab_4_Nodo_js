@@ -25,30 +25,23 @@
            
        }
 
-       function getElement()
-       {
-        //var output = document.getElementById('output');
-        ShowData();
-  
-           for(var pair in dictionary)           
-          {   
-               text += pair.key;
-               output.innerHTML = pair.key;
-               output.innerHTML = pair.value;
-
-               alert(pair.key);
-               //ShowData(text);
-           }
-       
-           $('body').append(text);        
-       }
 
        function ShowData()
        {
-           //alert(JSON.stringify(dictionary));
+           alert(JSON.stringify(dictionary[0]));
            document.getElementById("txtArea").value = JSON.stringify(dictionary);     
            
 
+       }
+
+       function ConvertToXml()
+       {
+           var xml = "<Xml>\n <Dictionary>\n";
+           for (var i = 0; i <dictionary.length; i++) {
+            xml += "   <Key>"+ dictionary[i].key+ "</Key><Value>"+ dictionary[i].value + "</Value>\n";
+         }
+           xml += " </Dictionary>\n</Xml>";
+           document.getElementById("txtArea").value = xml;  
        }
 
 
